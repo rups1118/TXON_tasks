@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <style>
+
+        ul
+        {
+            float: right;
+            list-style-type: none;
+            margin-top: 25px;
+        }
+        li
+        {
+            display: inline-block;
+        }
+
+        ul li a
+        {
+            text-decoration: none ;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid #fff;
+            transition: 0.6 ease;
+        }
+
+        ul li a:hover{
+            background-color:coral;
+            color: #000;
+        }
+
+
+        .logo 
+        {
+            float: left;
+            width: 150px ;
+            height: auto;
+        }
+        .main
+        {
+            max-width: 1200px;
+
+        }
+
+        #header{
+            background-image: url(C:/Users/Rupali/Desktop/assignments/image.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+        }
+
+
+        
+       
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'menu main main main right right'
+            'menu footer footer footer footer footer';
+          gap: 10px;
+          background-color: #211d07;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(255, 255, 255, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+    </style>
+    
+    <title>
+        Rupali webpage
+    </title>
+    <br>
+    
+    <body>
+        <header>
+
+            <div id ="header">
+                
+                
+            
+                <ul>
+                    <li>
+                        <a href="Ass1.html">home</a>
+                        <a href="Ass1contact.html">Contact</a>
+                        <a href="about.html">About</a>
+                        <a href="profile.html">your profile</a>
+                        <a href="services.html">services</a>
+                    </li>
+                </ul>
+              
+            </div>
+           
+           
+            <div class="grid-container">
+                <div class="item5">Services provided by us</div>
+              </div>
+        </header>
+    </body>
+</head>
